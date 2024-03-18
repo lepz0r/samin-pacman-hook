@@ -6,6 +6,6 @@ Target = *
 [Action]
 Description = Take Snapshot before removing a package
 When = PreTransaction
-Exec = /usr/share/libalpm/scripts/samin --pre-removal
+Exec = /usr/share/libalpm/scripts/samin-pacman-hook --pre-removal
 NeedsTargets
 AbortOnFail

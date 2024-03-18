@@ -6,5 +6,5 @@ Target = *
 [Action]
 Description = Take Snapshot after removing a package
 When = PostTransaction
-Exec = /usr/share/libalpm/scripts/samin --post-removal
+Exec = /usr/share/libalpm/scripts/samin-pacman-hook --post-removal
 NeedsTargets
