@@ -7,5 +7,5 @@ Target = *
 [Action]
 Description = Take samin snapshot after installing or upgrading a package
 When = PostTransaction
-Exec = /usr/local/bin/samin-pac --post-install
+Exec = /usr/share/libalpm/scripts/samin --post-install
 NeedsTargets

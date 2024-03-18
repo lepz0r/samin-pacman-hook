@@ -7,6 +7,6 @@ Target = *
 [Action]
 Description = Take Snapshot before installing or upgrading a package
 When = PreTransaction
-Exec = /usr/local/bin/samin-pac --pre-install
+Exec = /usr/share/libalpm/scripts/samin --pre-install
 NeedsTargets
 AbortOnFail
