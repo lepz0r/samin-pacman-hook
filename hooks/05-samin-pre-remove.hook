@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Take Snapshot before removing a package
+When = PreTransaction
+Exec = /usr/local/bin/samin-pac --pre-removal
+NeedsTargets
+AbortOnFail

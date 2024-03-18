@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = *
+
+[Action]
+Description = Take Snapshot before installing or upgrading a package
+When = PreTransaction
+Exec = /usr/local/bin/samin-pac --pre-install
+NeedsTargets
+AbortOnFail

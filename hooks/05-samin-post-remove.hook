@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Take Snapshot after removing a package
+When = PostTransaction
+Exec = /usr/local/bin/samin-pac --post-removal
+NeedsTargets
